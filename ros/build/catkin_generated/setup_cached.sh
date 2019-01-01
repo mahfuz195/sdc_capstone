@@ -7,7 +7,10 @@
 # new environment variables
 
 # modified environment variables
-export CMAKE_PREFIX_PATH="/home/student/Desktop/SDC_capstone/capstone_project/ros/devel:$CMAKE_PREFIX_PATH"
-export PWD="/home/student/Desktop/SDC_capstone/capstone_project/ros/build"
-export ROSLISP_PACKAGE_DIRECTORIES="/home/student/Desktop/SDC_capstone/capstone_project/ros/devel/share/common-lisp:$ROSLISP_PACKAGE_DIRECTORIES"
-export ROS_PACKAGE_PATH="/home/student/Desktop/SDC_capstone/capstone_project/ros/src:$ROS_PACKAGE_PATH"
+export CMAKE_PREFIX_PATH="/home/student/Desktop/git_folder/sdc_capstone/ros/devel:$CMAKE_PREFIX_PATH"
+export LD_LIBRARY_PATH="/home/student/Desktop/git_folder/sdc_capstone/ros/devel/lib:$LD_LIBRARY_PATH"
+export PKG_CONFIG_PATH="/home/student/Desktop/git_folder/sdc_capstone/ros/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
+export PWD="/home/student/Desktop/git_folder/sdc_capstone/ros/build"
+export PYTHONPATH="/home/student/Desktop/git_folder/sdc_capstone/ros/devel/lib/python2.7/dist-packages:$PYTHONPATH"
+export ROSLISP_PACKAGE_DIRECTORIES="/home/student/Desktop/git_folder/sdc_capstone/ros/devel/share/common-lisp"
+export ROS_PACKAGE_PATH="/home/student/Desktop/SDC_capstone/capstone_project/ros/src:/home/student/Desktop/git_folder/sdc_capstone/ros/src:$ROS_PACKAGE_PATH"

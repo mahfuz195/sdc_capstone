@@ -1,8 +1,8 @@
-prefix=/home/student/Desktop/SDC_capstone/capstone_project/ros/install
+prefix=/home/student/Desktop/git_folder/sdc_capstone/ros/install
 
 Name: tl_detector
 Description: Description of tl_detector
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/student/Desktop/SDC_capstone/capstone_project/ros/install/lib 
+Libs: -L/home/student/Desktop/git_folder/sdc_capstone/ros/install/lib 
 Requires: 
