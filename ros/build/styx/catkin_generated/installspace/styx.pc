@@ -1,0 +1,8 @@
+prefix=/home/student/Desktop/SDC_capstone/capstone_project/ros/install
+
+Name: styx
+Description: Description of styx
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/student/Desktop/SDC_capstone/capstone_project/ros/install/lib 
+Requires: 

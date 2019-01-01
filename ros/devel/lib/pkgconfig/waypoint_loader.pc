@@ -1,0 +1,8 @@
+prefix=/home/student/Desktop/SDC_capstone/capstone_project/ros/devel
+
+Name: waypoint_loader
+Description: Description of waypoint_loader
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/student/Desktop/SDC_capstone/capstone_project/ros/devel/lib 
+Requires: 
