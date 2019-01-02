@@ -15,7 +15,7 @@ class TLClassifier(object):
     def __init__(self):
         #TODO load classifier
 	curr_dir = os.path.dirname(os.path.realpath(__file__))
-        self.model = load_model(curr_dir+ '/model.h5') 
+        self.model = load_model(curr_dir+ '/model_2.h5') 
         # get prepared for the future.
         #with CustomObjectScope({'relu6': keras.applications.mobilenet.relu6,'DepthwiseConv2D': keras.applications.mobilenet.DepthwiseConv2D}):
         #model = load_model('weights.hdf5')
