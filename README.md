@@ -34,7 +34,7 @@ data
 |       |   ...
 ```
 
-##### CNN Model
+##### Traffic Signal Classifier Model
 
 I have tried with different models and used transfar learning to retrain the model. First I tried to use the vgg16 mode. But It failed due to the bigger size of vgg16 (~2.5GB). Then I tried to use a lightweight model MobileNet and retrained it using the our dataset. But the MobilenNet but it only supports a maximum size of (224,224) as input. Thus, it failed to deteted the traffic signals accurately in the simulation. Then I modified the VGG16 structure to reduce the network size and finally came up with the following structure: 
 
