@@ -41,7 +41,7 @@ I have tried with different models and used transfar learning to retrain the mod
 ![](model_plot.png)
 
 
-And finally, the script in ```/tl_detector/light_classification/train.ipynub``` is the script that we used for training the model. We have used data augmentation to create more data using ```ImageGenerator``` in keras. Here is the code spippit: 
+After the model developemnt, the script in ```/tl_detector/light_classification/train.ipynub``` is the script that we used for training the model. We have used data augmentation to create more data using ```ImageGenerator``` in keras. Here is the code spippit: 
 ```
 train_datagen = ImageDataGenerator(rescale = 1./255,
                                    horizontal_flip = True,
@@ -51,6 +51,7 @@ train_datagen = ImageDataGenerator(rescale = 1./255,
                                    height_shift_range=0.3,
                                    rotation_range=30)
 ```
+Finally we came up with the trained model ```/tl_detector/light_classification/model.h5``` that we used to classify the traffic signal light status. 
 
 ##### 
 
