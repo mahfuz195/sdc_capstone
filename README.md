@@ -8,6 +8,44 @@ Please use **one** of the two installation options, either native **or** docker 
 
 The goal of this project is do program a real self-driving car. The self driving car has three modules: 1) Perception, 2) Planning, and 3) Control. We were required to program in all three modules to make the car autonomous. In order to work in these three module, we had to code in waypoint_updated.py (Planning), tl_detector.py (Perception), and dbw_node.py (Control). The car will run in the given track while following the given waypoints. The car have to obey the traffic signals and update the waypoints accordingliy.
 
+#### Perception
+
+In the perception module the camera placed in the car captures the image of the traffic signal infront of the car. We have developed a Deep learning based CNN model that can classify the traffic signal status. This is the steps we followed to develop the traffic signal classifier:
+
+##### Data Collection
+
+We have collected the from the simulator and used that data to train the classifier. The collected data was manully classified into red and not-red. and placed the images in following structue for training: 
+
+```
+data
+└───train
+│   │   red
+│       │   1.jpg
+|       |   ...
+│   │   notred
+│       │   1.jpg
+|       |   ...
+└───val
+│   │   red
+│       │   1.jpg
+|       |   ...
+│   │   notred
+│       │   1.jpg
+|       |   ...
+└───test
+│   │   red
+│       │   1.jpg
+|       |   ...
+│   │   notred
+│       │   1.jpg
+|       |   ...
+```
+
+
+#### Planning
+
+#### Control
+
 
 ### Native Installation
 
