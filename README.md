@@ -38,7 +38,54 @@ data
 
 I have tried with different models and used transfar learning to retrain the model. First I tried to use the vgg16 mode. But It failed due to the bigger size of vgg16 (~2.5GB). Then I tried to use a lightweight model MobileNet and retrained it using the our dataset. But the MobilenNet but it only supports a maximum size of (224,224) as input. Thus, it failed to deteted the traffic signals accurately in the simulation. Then I modified the VGG16 structure to reduce the network size and finally came up with the following structure: 
 
-----
+
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+conv2d_43 (Conv2D)           (None, 400, 400, 32)      896       
+_________________________________________________________________
+conv2d_44 (Conv2D)           (None, 400, 400, 32)      9248      
+_________________________________________________________________
+max_pooling2d_22 (MaxPooling (None, 200, 200, 32)      0         
+_________________________________________________________________
+conv2d_45 (Conv2D)           (None, 200, 200, 32)      9248      
+_________________________________________________________________
+conv2d_46 (Conv2D)           (None, 198, 198, 32)      9248      
+_________________________________________________________________
+max_pooling2d_23 (MaxPooling (None, 99, 99, 32)        0         
+_________________________________________________________________
+conv2d_47 (Conv2D)           (None, 99, 99, 32)        9248      
+_________________________________________________________________
+conv2d_48 (Conv2D)           (None, 97, 97, 32)        9248      
+_________________________________________________________________
+max_pooling2d_24 (MaxPooling (None, 48, 48, 32)        0         
+_________________________________________________________________
+conv2d_49 (Conv2D)           (None, 48, 48, 32)        9248      
+_________________________________________________________________
+conv2d_50 (Conv2D)           (None, 46, 46, 32)        9248      
+_________________________________________________________________
+max_pooling2d_25 (MaxPooling (None, 23, 23, 32)        0         
+_________________________________________________________________
+conv2d_51 (Conv2D)           (None, 23, 23, 32)        9248      
+_________________________________________________________________
+conv2d_52 (Conv2D)           (None, 21, 21, 32)        9248      
+_________________________________________________________________
+max_pooling2d_26 (MaxPooling (None, 10, 10, 32)        0         
+_________________________________________________________________
+flatten_5 (Flatten)          (None, 3200)              0         
+_________________________________________________________________
+dense_15 (Dense)             (None, 1024)              3277824   
+_________________________________________________________________
+dense_16 (Dense)             (None, 512)               524800    
+_________________________________________________________________
+dense_17 (Dense)             (None, 128)               65664     
+_________________________________________________________________
+dense_18 (Dense)             (None, 2)                 258       
+=================================================================
+Total params: 3,952,674
+Trainable params: 3,952,674
+Non-trainable params: 0
+
 
 And finally, the script in ```/tl_detector/light_classification/train.ipynub``` is the script that we used for training the model. We have used data augmentation to create more data using ```ImageGenerator``` in keras. Here is the code spippit: 
 
