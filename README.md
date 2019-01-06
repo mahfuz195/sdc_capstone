@@ -57,8 +57,11 @@ Finally we came up with the trained model ```/tl_detector/light_classification/m
 
 #### Planning
 
+The planning module is located in ```waypoint_updated.py``` where traffic signal status information and predefined waypoints of the car is located. Based on the traffic signal status, the vehicle accelerate or decelarate or keep follwoing the current target waypoints. 
+
 #### Control
 
+The control module of the car is located in ```dbw_node.py``` which in co-operation with the scripts ```yaw_controller.py```, ```twist_controller.py``` , and ```pid.py``` controls the vehicle through the Drive-by-wire (DBW) interface. This control module provides control commands to the vehicle such as throttle, break, and steering commands. Upon getting the command the vehicle in simulator moves accordingly. 
 
 ### Native Installation
 
