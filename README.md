@@ -6,7 +6,10 @@ Please use **one** of the two installation options, either native **or** docker 
 
 ### Introduction
 
-The goal of this project is do program a real self-driving car. The self driving car has three modules: 1) Perception, 2) Planning, and 3) Control. We were required to program in all three modules to make the car autonomous. In order to work in these three module, we had to code in waypoint_updated.py (Planning), tl_detector.py (Perception), and dbw_node.py (Control). The car will run in the given track while following the given waypoints. The car have to obey the traffic signals and update the waypoints accordingliy.
+The goal of this project is do program a real self-driving car. The self driving car has three modules: 1) Perception, 2) Planning, and 3) Control. We were required to program in all three modules to make the car autonomous. In order to work in these three module, we had to code in waypoint_updated.py (Planning), tl_detector.py (Perception), and dbw_node.py (Control). The car will run in the given track while following the given waypoints. The car have to obey the traffic signals and update the waypoints accordingliy. The following figure shows the indetails module archtecture of the autonomous vehicle:
+
+
+![](av_architecture1.png)
 
 #### Perception
 
